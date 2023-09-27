@@ -1,0 +1,42 @@
+/* Usuario Web */
+/* ejercicio básico de regsitro e inicio de sesión de usuario */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.inicio_sesion {
+  background-color: grey;
+  width: 30%;
+  height: 50%;
+  padding: 3em;
+  margin: 15% auto;
+}
+
+.registro_usuario {
+  background-color: grey;
+  width: 30%;
+  height: 50%;
+  padding: 3em;
+  margin: 15% auto;
+}
+
+.usuario_conectado {
+  background-color: grey;
+  width: 30%;
+  height: 50%;
+  padding: 3em;
+  margin: 15% auto;
+}
+
+
+.menu {
+  background-color: grey;
+  width: 50%;
+  height: 50%;
+  padding: 3em;
+  margin: 5% auto;
+  text-align: center;
+}
