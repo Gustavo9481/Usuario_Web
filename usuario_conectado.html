@@ -4,20 +4,27 @@
     <meta charset="utf-8">
     <title>Usuario Conectado</title>
     <link href="css/uw_styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
   </head>
   <body>
-    <main class="usuario_conectado">
-      <h3>¡ Bienvenido !</h3>
-      <img>foto de perfil
-      <p>Has iniciado sesión como *usuario*</p>
-      <input type="submit" name="cerrar" value="Cerrar Sesión">
+    <main class="caja-sesion">
+      <div  class="sesion conectado">
+        <h3>¡ Bienvenido !</h3>
+        <img src="img/user.svg" class="img-conectado"/>
+        <p>Has iniciado sesión como *usuario*</p>
+        <input type="submit" name="cerrar" value="Cerrar Sesión" class="boton">
+      </div>
     </main>
     <footer>
-      <nav class="menu">
-        <a href="inicio_sesion.html">Inicio de Sesión</a>
-        <a href="registro_usuario.html">Registro de Usuario</a>
-        <a href="usuario_conectado.html">Usuario Conectado</a>
-      </nav>  
+      <div class="caja-menu">
+        <nav class="menu">
+          <a href="inicio_sesion.html">Inicio de Sesión</a>
+          <a href="registro_usuario.html">Registro de Usuario</a>
+          <a href="usuario_conectado.html">Usuario Conectado</a>
+        </nav>
+      </div>
     </footer>
   </body>
 </html>

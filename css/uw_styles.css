@@ -1,42 +1,90 @@
 /* Usuario Web */
 /* ejercicio básico de regsitro e inicio de sesión de usuario */
 
+:root {
+  --fuente-family: 'Roboto', sans-serif;
+  --fuente-color: hsla(0, 0%, 19%, 1);
+  --fondo-body: hsla(0, 0%, 86%, 1);
+  --fondo-sesion: hsla(0, 0%, 100%, 1);
+  --boton-color: hsla(210, 98%, 51%, 1);
+}
+
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: var(--fuente-family);
+  color: var(--fuente-color);
 }
 
-.inicio_sesion {
-  background-color: grey;
+
+.caja-sesion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: var(--fondo-body);
+}
+
+.sesion {
+  background-color: var(--fondo-sesion);
   width: 30%;
-  height: 50%;
+  height: 60%;
   padding: 3em;
-  margin: 15% auto;
+  border-radius: 15px;
+  text-align: center;
 }
 
-.registro_usuario {
-  background-color: grey;
-  width: 30%;
+.inicio {
   height: 50%;
-  padding: 3em;
-  margin: 15% auto;
 }
 
-.usuario_conectado {
-  background-color: grey;
-  width: 30%;
-  height: 50%;
-  padding: 3em;
-  margin: 15% auto;
+.registro {
+  height: 60%;
 }
 
+.conectado {
+  height: 40%;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  border-color: var(--fondo-body);
+}
+
+.boton {
+  background-color: var(--boton-color);
+  color: var(--fondo-sesion);
+  font-size: 1.2em;
+  margin-top: 5px;
+}
+
+.img-conectado {
+  width: 5em;
+  height: 5em;
+}
+
+/* Cinta de menú */
+
+a {
+  text-decoration: none;
+  padding: 1.5em;
+}
+
+.caja-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background-color: var(--fondo-body);
+}
 
 .menu {
-  background-color: grey;
   width: 50%;
   height: 50%;
   padding: 3em;
-  margin: 5% auto;
+  margin: auto;
   text-align: center;
 }
