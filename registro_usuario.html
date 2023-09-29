@@ -12,21 +12,23 @@
     <main class="caja-sesion">
       <div class="sesion registro">
         <h3>Registro de Usuario</h3>
-        <input placeholder="nombre de usuario">
-        <input placeholder="email">
-        <input placeholder="contraseña">
-        <input placeholder="confirme la contraseña">
-        <input placeholder="pais">
-        <input placeholder="teléfono">
-        <img>
-        <input type="submit" name="registro" value="Registrarse" class="boton">
+        <form>
+          <input placeholder="nombre de usuario">
+          <input placeholder="email">
+          <input placeholder="contraseña">
+          <input placeholder="confirme la contraseña">
+          <input placeholder="teléfono">
+          <label for="perfil" class="boton-2">cargar foto de perfil</label>  
+          <input type="file" accept="image/**" name="perfil" id="perfil" style="display: none;">
+          <input type="submit" name="registro" value="Registrarse" class="boton">
+        </form>
       </div>
     </main>
     <footer>
       <div class="caja-menu">
         <nav class="menu">
           <a href="inicio_sesion.html">Inicio de Sesión</a>
-          <a href="registro_usuario.html">Registro de Usuario</a>
+          <a href="registro_usuario.html" class="a-actual">Registro de Usuario</a>
           <a href="usuario_conectado.html">Usuario Conectado</a>
         </nav>  
       </div>

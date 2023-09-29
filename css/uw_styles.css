@@ -6,9 +6,12 @@
   --fuente-color: hsla(0, 0%, 19%, 1);
   --fondo-body: hsla(0, 0%, 86%, 1);
   --fondo-sesion: hsla(0, 0%, 100%, 1);
-  --boton-color: hsla(210, 98%, 51%, 1);
+  --boton-color: hsla(212, 76%, 55%, 1);
+  --boton-color-active: hsla(212, 76%, 36%, 1);
+  --centrado: center;
 }
 
+/* ----- estilos generales ----- */
 
 * {
   box-sizing: border-box;
@@ -21,8 +24,8 @@
 
 .caja-sesion {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: var(--centrado);
+  align-items: var(--centrado);
   height: 80vh;
   background-color: var(--fondo-body);
 }
@@ -33,25 +36,27 @@
   height: 60%;
   padding: 3em;
   border-radius: 15px;
-  text-align: center;
+  text-align: var(--centrado);
 }
 
-.inicio {
-  height: 50%;
-}
 
 .registro {
-  height: 60%;
+  height: 80%;
 }
 
-.conectado {
-  height: 40%;
-}
 
 input {
+  display: block;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
   width: 100%;
   padding: 5px;
-  border-color: var(--fondo-body);
+  border: none;
+  border-bottom: 2px solid var(--fondo-body);
+}
+
+input:focus {
+  outline: none;
 }
 
 .boton {
@@ -59,6 +64,52 @@ input {
   color: var(--fondo-sesion);
   font-size: 1.2em;
   margin-top: 5px;
+  border: none;
+}
+
+.boton:active {
+  background-color: var(--boton-color-active); 
+}
+
+
+
+/* ----- inicio de sesión ----- */
+
+.inicio {
+  height: 45%;
+}
+
+
+
+/* ----- registro de usuario ----- */
+
+.registro {
+  height: 80%;
+}
+
+.boton-2 {
+  display: block;
+  background-color: var(--fondo-sesion);
+  font-size: 0.9em;
+  color: grey;
+  border: solid 1px var(--fondo-body);
+  padding: 5px;
+  margin-bottom: 1.5em;
+}
+
+.boton-2:hover {
+  background-color: var(--boton-color);
+  color: var(--fondo-sesion);
+}
+
+.boton-2:active {
+  background-color: var(--boton-color-active);
+}
+
+/* ----- usuario conectado ----- */
+
+.conectado {
+  height: 40%;
 }
 
 .img-conectado {
@@ -66,17 +117,27 @@ input {
   height: 5em;
 }
 
-/* Cinta de menú */
+
+
+/* ----- Cinta de menú ----- */
 
 a {
   text-decoration: none;
   padding: 1.5em;
 }
 
+a:active {
+  color: var(--boton-color);
+}
+
+.a-actual {
+  color: var(--boton-color-active);
+}
+
 .caja-menu {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: var(--centrado);
+  align-items: var(--centrado);
   height: 20vh;
   background-color: var(--fondo-body);
 }
@@ -86,5 +147,5 @@ a {
   height: 50%;
   padding: 3em;
   margin: auto;
-  text-align: center;
+  text-align: var(--centrado);
 }

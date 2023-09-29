@@ -12,15 +12,17 @@
     <main class="caja-sesion">
       <div class="sesion inicio">
         <h3>Inicio de Sesión</h3>
-        <input placeholder="usuario">
-        <input placeholder="contraseña">
-        <input type="submit" name="login" value="login" class="boton">
+        <form>
+          <input type="text" name="usuario" placeholder="usuario" class="inicio-input">
+          <input type="text" name="password" placeholder="contraseña" class="inicio-input">
+          <input type="submit" name="login" value="login" class="boton">
+        </form>
       </div>
     </main>
     <footer>
       <div class="caja-menu">
         <nav class="menu">
-          <a href="inicio_sesion.html">Inicio de Sesión</a>
+          <a href="inicio_sesion.html" class="a-actual">Inicio de Sesión</a>
           <a href="registro_usuario.html">Registro de Usuario</a>
           <a href="usuario_conectado.html">Usuario Conectado</a>
         </nav>
