@@ -33,17 +33,12 @@
 .sesion {
   background-color: var(--fondo-sesion);
   box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
-  width: clamp(600px, 30%, 600px);
-  min-width: 600px;
+  width: clamp(300px, 30%, 600px);
+  min-width: 300px;
   height: 60%;
   padding: 3em;
   border-radius: 15px;
   text-align: var(--centrado);
-}
-
-
-.registro {
-  height: 80%;
 }
 
 
@@ -54,6 +49,7 @@ input {
   width: 100%;
   padding: 5px;
   border: none;
+  font-family: var(--fuente-family);
   border-bottom: 2px solid var(--fondo-body);
 }
 
@@ -73,25 +69,18 @@ input:focus {
   background-color: var(--boton-color-active); 
 }
 
-
-
-/* ----- inicio de sesión ----- */
-
-.inicio {
-  height: 45%; 
-}
-
-.inicio-caja {
+    
+.caja-input {
   position: relative;
 }
 
-.inicio-input:focus + .inicio-label,
-.inicio-input:not(:placeholder-shown) + .inicio-label{
+input:focus + .input-label,
+input:not(:placeholder-shown) + .input-label{
   transform: translateY(-12px) scale(.7);
   transform-origin: left top;
 }
 
-.inicio-label {
+.input-label {
   position: absolute;
   top: 0;
   left: 5px;
@@ -102,6 +91,12 @@ input:focus {
   transition: transform .5s, color .3s;
 }
 
+
+/* ----- inicio de sesión ----- */
+
+.inicio {
+  height: 45%; 
+}
 
 /* ----- registro de usuario ----- */
 

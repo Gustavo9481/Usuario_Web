@@ -13,11 +13,26 @@
       <div class="sesion registro">
         <h3>Registro de Usuario</h3>
         <form>
-          <input placeholder="nombre de usuario">
-          <input placeholder="email">
-          <input placeholder="contraseña">
-          <input placeholder="confirme la contraseña">
-          <input placeholder="teléfono">
+          <div class="caja-input">
+            <input type="text" name="nombre_usuario" placeholder=" ">
+            <label for="nombre_usuario" class="input-label">Nombre de Usuario</label>
+          </div>
+          <div class="caja-input">
+            <input type="text" name="email" placeholder=" ">
+            <label for="email" class="input-label">Email</label>
+          </div>
+          <div class="caja-input">
+            <input type="text" name="password" placeholder=" ">
+            <label for="password" class="input-label">Contraseña</label>
+          </div>
+          <div class="caja-input">
+            <input type="text" name="password-2" placeholder=" ">
+            <label for="passwor-2" class="input-label">Confirme la contraseña</label>
+          </div>
+          <div class="caja-input">
+            <input type="text" name="telefono" placeholder=" ">
+            <label for="telefono" class="input-label">Teléfono</label>
+          </div>
           <label for="perfil" class="boton-2">cargar foto de perfil</label>  
           <input type="file" accept="image/**" name="perfil" id="perfil" style="display: none;">
           <input type="submit" name="registro" value="Registrarse" class="boton">
