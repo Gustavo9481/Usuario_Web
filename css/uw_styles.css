@@ -11,7 +11,8 @@
   --centrado: center;
 }
 
-/* ----- estilos generales ----- */
+
+/* -------------------------------------------------------- Estilos Generales */
 
 * {
   box-sizing: border-box;
@@ -92,13 +93,16 @@ input:not(:placeholder-shown) + .input-label{
 }
 
 
-/* ----- inicio de sesión ----- */
+
+/* --------------------------------------------------------- Inicio de Sesión */
 
 .inicio {
   height: 45%; 
 }
 
-/* ----- registro de usuario ----- */
+
+
+/* ------------------------------------------------------ Registro de Usuario */
 
 .registro {
   height: 80%;
@@ -123,7 +127,9 @@ input:not(:placeholder-shown) + .input-label{
   background-color: var(--boton-color-active);
 }
 
-/* ----- usuario conectado ----- */
+
+
+/* -------------------------------------------------------- Usuario Conectado */
 
 .conectado {
   height: 40%;
@@ -136,7 +142,7 @@ input:not(:placeholder-shown) + .input-label{
 
 
 
-/* ----- Cinta de menú ----- */
+/* ------------------------------------------------------------ Cinta de Menú */
 
 a {
   text-decoration: none;
